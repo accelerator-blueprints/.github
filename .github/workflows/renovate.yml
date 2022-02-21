@@ -11,7 +11,7 @@ on:
         default: true
   schedule:
     # https://crontab.guru/
-    - cron: '0 6 * * 5'
+    - cron: '0 4 * * *'
 #   pull_request_target:
 #     branches:
 #       - $default-branch
@@ -42,7 +42,7 @@ jobs:
 
       # https://github.com/renovatebot/github-action install renovate app
       - name: execute-dependency-update
-        uses: renovatebot/github-action@v31.24.1
+        uses: renovatebot/github-action@v31.81.3
         with:
           configurationFile: ${{ env.RENOVATE_CONFIG_FOLDER }}/config.js
           token: ${{ secrets.RENOVATE_TOKEN }}
