@@ -7,37 +7,38 @@ updates:
   - package-ecosystem: pip
     directory: "/"
     schedule:
-      interval: weekly
+      interval: quarterly
     labels:
       - ":game_die: dependencies"
       - ":robot: bot"
     commit-message:
       prefix: chore
       include: "scope"
-    reviewers:
+    assignees:
       - ivankatliarchuk
 
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
-      interval: weekly
+      interval: quarterly
     commit-message:
       prefix: chore
       include: "scope"
     labels:
       - ":game_die: dependencies"
       - ":robot: bot"
-    reviewers:
+      - "github-action"
+    assignees:
       - ivankatliarchuk
 
   - package-ecosystem: "gitsubmodule"
     directory: "/"
     schedule:
-      interval: weekly
+      interval: quarterly
     labels:
       - ":game_die: dependencies"
       - ":robot: bot"
-    reviewers:
+    assignees:
       - ivankatliarchuk
     commit-message:
       prefix: chore
@@ -46,38 +47,38 @@ updates:
   - package-ecosystem: "gomod"
     directory: "/"
     schedule:
-      interval: weekly
+      interval: quarterly
     commit-message:
       prefix: chore
       include: "scope"
     labels:
       - ":game_die: dependencies"
       - ":robot: bot"
-    reviewers:
+    assignees:
       - ivankatliarchuk
 
   - package-ecosystem: "docker"
     directory: "/"
     schedule:
-      interval: weekly
+      interval: quarterly
     commit-message:
       prefix: chore
       include: "scope"
     labels:
       - ":game_die: dependencies"
       - ":robot: bot"
-    reviewers:
+    assignees:
       - ivankatliarchuk
 
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
-      interval: weekly
+      interval: quarterly
     commit-message:
       prefix: chore
       include: "scope"
     labels:
       - ":game_die: dependencies"
       - ":robot: bot"
-    reviewers:
+    assignees:
       - ivankatliarchuk
